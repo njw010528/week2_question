@@ -14,7 +14,7 @@ class PriorityQueue:
       self._sift_down(0)
       return item[1]
     elif len(self.heap) == 1:
-      priority, item = self.heap.pop()
+      _, item = self.heap.pop()
       return item[1]
     else:
       return None
